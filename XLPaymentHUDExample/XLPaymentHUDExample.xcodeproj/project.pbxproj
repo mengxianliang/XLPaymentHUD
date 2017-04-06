@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E14FCE11E94F09D002EEBD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FCE01E94F09D002EEBD4 /* main.m */; };
+		5E14FCE41E94F09D002EEBD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FCE31E94F09D002EEBD4 /* AppDelegate.m */; };
+		5E14FCE71E94F09D002EEBD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FCE61E94F09D002EEBD4 /* ViewController.m */; };
+		5E14FCEA1E94F09D002EEBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E14FCE81E94F09D002EEBD4 /* Main.storyboard */; };
+		5E14FCEC1E94F09D002EEBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E14FCEB1E94F09D002EEBD4 /* Assets.xcassets */; };
+		5E14FCEF1E94F09D002EEBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E14FCED1E94F09D002EEBD4 /* LaunchScreen.storyboard */; };
+		5E14FCFF1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */; };
+		5E14FD021E95D573002EEBD4 /* XLPaymentLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E14FD011E95D573002EEBD4 /* XLPaymentLoadingHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E14FCDC1E94F09D002EEBD4 /* XLPaymentHUDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLPaymentHUDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E14FCE01E94F09D002EEBD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E14FCE21E94F09D002EEBD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E14FCE31E94F09D002EEBD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E14FCE51E94F09D002EEBD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E14FCE61E94F09D002EEBD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E14FCE91E94F09D002EEBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E14FCEB1E94F09D002EEBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E14FCEE1E94F09D002EEBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E14FCF01E94F09D002EEBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E14FCFD1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPaymentSuccessHUD.h; sourceTree = "<group>"; };
+		5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentSuccessHUD.m; sourceTree = "<group>"; };
+		5E14FD001E95D573002EEBD4 /* XLPaymentLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPaymentLoadingHUD.h; sourceTree = "<group>"; };
+		5E14FD011E95D573002EEBD4 /* XLPaymentLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentLoadingHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E14FCD91E94F09D002EEBD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E14FCD31E94F09D002EEBD4 = {
+			isa = PBXGroup;
+			children = (
+				5E14FCF61E94F0AD002EEBD4 /* XLPaymentHUD */,
+				5E14FCDE1E94F09D002EEBD4 /* XLPaymentHUDExample */,
+				5E14FCDD1E94F09D002EEBD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E14FCDD1E94F09D002EEBD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FCDC1E94F09D002EEBD4 /* XLPaymentHUDExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E14FCDE1E94F09D002EEBD4 /* XLPaymentHUDExample */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FCE21E94F09D002EEBD4 /* AppDelegate.h */,
+				5E14FCE31E94F09D002EEBD4 /* AppDelegate.m */,
+				5E14FCE51E94F09D002EEBD4 /* ViewController.h */,
+				5E14FCE61E94F09D002EEBD4 /* ViewController.m */,
+				5E14FCE81E94F09D002EEBD4 /* Main.storyboard */,
+				5E14FCEB1E94F09D002EEBD4 /* Assets.xcassets */,
+				5E14FCED1E94F09D002EEBD4 /* LaunchScreen.storyboard */,
+				5E14FCF01E94F09D002EEBD4 /* Info.plist */,
+				5E14FCDF1E94F09D002EEBD4 /* Supporting Files */,
+			);
+			path = XLPaymentHUDExample;
+			sourceTree = "<group>";
+		};
+		5E14FCDF1E94F09D002EEBD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FCE01E94F09D002EEBD4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E14FCF61E94F0AD002EEBD4 /* XLPaymentHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5E14FCFD1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.h */,
+				5E14FCFE1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m */,
+				5E14FD001E95D573002EEBD4 /* XLPaymentLoadingHUD.h */,
+				5E14FD011E95D573002EEBD4 /* XLPaymentLoadingHUD.m */,
+			);
+			path = XLPaymentHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E14FCDB1E94F09D002EEBD4 /* XLPaymentHUDExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E14FCF31E94F09D002EEBD4 /* Build configuration list for PBXNativeTarget "XLPaymentHUDExample" */;
+			buildPhases = (
+				5E14FCD81E94F09D002EEBD4 /* Sources */,
+				5E14FCD91E94F09D002EEBD4 /* Frameworks */,
+				5E14FCDA1E94F09D002EEBD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLPaymentHUDExample;
+			productName = XLPaymentHUDExample;
+			productReference = 5E14FCDC1E94F09D002EEBD4 /* XLPaymentHUDExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E14FCD41E94F09D002EEBD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MengXianLiang;
+				TargetAttributes = {
+					5E14FCDB1E94F09D002EEBD4 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5E14FCD71E94F09D002EEBD4 /* Build configuration list for PBXProject "XLPaymentHUDExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E14FCD31E94F09D002EEBD4;
+			productRefGroup = 5E14FCDD1E94F09D002EEBD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E14FCDB1E94F09D002EEBD4 /* XLPaymentHUDExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E14FCDA1E94F09D002EEBD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E14FCEF1E94F09D002EEBD4 /* LaunchScreen.storyboard in Resources */,
+				5E14FCEC1E94F09D002EEBD4 /* Assets.xcassets in Resources */,
+				5E14FCEA1E94F09D002EEBD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E14FCD81E94F09D002EEBD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E14FCE71E94F09D002EEBD4 /* ViewController.m in Sources */,
+				5E14FCFF1E95D2D0002EEBD4 /* XLPaymentSuccessHUD.m in Sources */,
+				5E14FCE41E94F09D002EEBD4 /* AppDelegate.m in Sources */,
+				5E14FCE11E94F09D002EEBD4 /* main.m in Sources */,
+				5E14FD021E95D573002EEBD4 /* XLPaymentLoadingHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E14FCE81E94F09D002EEBD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E14FCE91E94F09D002EEBD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E14FCED1E94F09D002EEBD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E14FCEE1E94F09D002EEBD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E14FCF11E94F09D002EEBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xianliang meng (79SX5888C3)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "12fd5233-91ad-4bad-85eb-088f522366dd";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E14FCF21E94F09D002EEBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xianliang meng (79SX5888C3)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "12fd5233-91ad-4bad-85eb-088f522366dd";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E14FCF41E94F09D002EEBD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xianliang meng (79SX5888C3)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XLPaymentHUDExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.XLPaymentHUDExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mxlDev;
+			};
+			name = Debug;
+		};
+		5E14FCF51E94F09D002EEBD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xianliang meng (79SX5888C3)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XLPaymentHUDExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.XLPaymentHUDExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mxlDev;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E14FCD71E94F09D002EEBD4 /* Build configuration list for PBXProject "XLPaymentHUDExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E14FCF11E94F09D002EEBD4 /* Debug */,
+				5E14FCF21E94F09D002EEBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E14FCF31E94F09D002EEBD4 /* Build configuration list for PBXNativeTarget "XLPaymentHUDExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E14FCF41E94F09D002EEBD4 /* Debug */,
+				5E14FCF51E94F09D002EEBD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E14FCD41E94F09D002EEBD4 /* Project object */;
+}
