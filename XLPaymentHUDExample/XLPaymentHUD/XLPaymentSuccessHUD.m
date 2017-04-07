@@ -12,6 +12,8 @@ static CGFloat lineWidth = 4.0f;
 static CGFloat circleDuriation = 0.5f;
 static CGFloat checkDuration = 0.2f;
 
+#define BlueColor [UIColor colorWithRed:16/255.0 green:142/255.0 blue:233/255.0 alpha:1]
+
 
 @implementation XLPaymentSuccessHUD
 {
@@ -74,7 +76,7 @@ static CGFloat checkDuration = 0.2f;
     circleLayer.frame = _animationLayer.bounds;
     [_animationLayer addSublayer:circleLayer];
     circleLayer.fillColor =  [[UIColor clearColor] CGColor];
-    circleLayer.strokeColor  = [UIColor colorWithRed:78/255.0f green:158/255.0f blue:216/255.0f alpha:1].CGColor;
+    circleLayer.strokeColor  = BlueColor.CGColor;
     circleLayer.lineWidth = lineWidth;
     circleLayer.lineCap = kCALineCapRound;
     
@@ -106,7 +108,7 @@ static CGFloat checkDuration = 0.2f;
     CAShapeLayer *checkLayer = [CAShapeLayer layer];
     checkLayer.path = path.CGPath;
     checkLayer.fillColor = [UIColor clearColor].CGColor;
-    checkLayer.strokeColor = [UIColor colorWithRed:78/255.0f green:158/255.0f blue:216/255.0f alpha:1].CGColor;
+    checkLayer.strokeColor = BlueColor.CGColor;
     checkLayer.lineWidth = lineWidth;
     checkLayer.lineCap = kCALineCapRound;
     checkLayer.lineJoin = kCALineJoinRound;

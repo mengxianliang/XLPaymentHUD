@@ -9,6 +9,7 @@
 #import "XLPaymentLoadingHUD.h"
 
 static CGFloat lineWidth = 4.0f;
+#define BlueColor [UIColor colorWithRed:16/255.0 green:142/255.0 blue:233/255.0 alpha:1]
 
 @implementation XLPaymentLoadingHUD
 {
@@ -61,7 +62,7 @@ static CGFloat lineWidth = 4.0f;
     _animationLayer.bounds = CGRectMake(0, 0, 60, 60);
     _animationLayer.position = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0);
     _animationLayer.fillColor = [UIColor clearColor].CGColor;
-    _animationLayer.strokeColor = [UIColor colorWithRed:78/255.0f green:158/255.0f blue:216/255.0f alpha:1].CGColor;
+    _animationLayer.strokeColor = BlueColor.CGColor;
     _animationLayer.lineWidth = lineWidth;
     _animationLayer.lineCap = kCALineCapRound;
     [self.layer addSublayer:_animationLayer];
