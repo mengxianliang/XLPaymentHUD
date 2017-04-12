@@ -30,7 +30,9 @@
     
     self.title = @"正在付款...";
     
+    //隐藏支付完成动画
     [XLPaymentSuccessHUD hideIn:self.view];
+    //显示支付中动画
     [XLPaymentLoadingHUD showIn:self.view];
 }
 
@@ -38,7 +40,9 @@
     
     self.title = @"付款完成";
     
+    //隐藏支付中成动画
     [XLPaymentLoadingHUD hideIn:self.view];
+    //显示支付完成动画
     [XLPaymentSuccessHUD showIn:self.view];
 }
 
