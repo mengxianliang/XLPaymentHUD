@@ -19,4 +19,7 @@ iOS 仿照支付宝支付动画
 ```
 
 ### [支付中动画原理](http://blog.csdn.net/u013282507/article/details/70208141)
+
 ### [支付完成动画原理](http://blog.csdn.net/u013282507/article/details/70211889)
+
+### 个人开发过的UI工具集合 [XLUIKit](https://github.com/mengxianliang/XLUIKit)
