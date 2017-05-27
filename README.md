@@ -1,5 +1,5 @@
 # XLPaymentHUD
-iOS 仿照支付宝支付动画
+iOS 支付宝支付动画
 
 ### 显示效果
 
