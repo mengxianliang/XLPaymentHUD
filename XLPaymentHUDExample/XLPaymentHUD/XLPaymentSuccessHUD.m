@@ -13,7 +13,8 @@ static CGFloat circleDuriation = 0.5f;
 static CGFloat checkDuration = 0.2f;
 
 #define BlueColor [UIColor colorWithRed:16/255.0 green:142/255.0 blue:233/255.0 alpha:1]
-
+#define circleAnimationKey @"circleAnimationKey"
+#define circleAnimationValue @"circleAnimationValue"
 
 @implementation XLPaymentSuccessHUD
 {
@@ -43,10 +44,6 @@ static CGFloat checkDuration = 0.2f;
 
 -(void)start{
     [self circleAnimation];
-    dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 0.8 * circleDuriation * NSEC_PER_SEC);
-    dispatch_after(time, dispatch_get_main_queue(), ^(void){
-        [self checkAnimation];
-    });
 }
 
 -(void)hide{
@@ -91,7 +88,7 @@ static CGFloat checkDuration = 0.2f;
     checkAnimation.fromValue = @(0.0f);
     checkAnimation.toValue = @(1.0f);
     checkAnimation.delegate = self;
-    [checkAnimation setValue:@"checkAnimation" forKey:@"animationName"];
+    [checkAnimation setValue:circleAnimationValue forKey:circleAnimationKey];
     [circleLayer addAnimation:checkAnimation forKey:nil];
 }
 
@@ -121,6 +118,14 @@ static CGFloat checkDuration = 0.2f;
     checkAnimation.delegate = self;
     [checkAnimation setValue:@"checkAnimation" forKey:@"animationName"];
     [checkLayer addAnimation:checkAnimation forKey:nil];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    NSString *animValue = [anim valueForKey:circleAnimationKey];
+    if (animValue.length > 0) {
+        [self checkAnimation];
+    }
 }
 
 @end
