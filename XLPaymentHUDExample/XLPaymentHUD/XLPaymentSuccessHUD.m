@@ -14,22 +14,21 @@ static CGFloat checkDuration = 0.2f;
 
 #define BlueColor [UIColor colorWithRed:16/255.0 green:142/255.0 blue:233/255.0 alpha:1]
 
-
-@implementation XLPaymentSuccessHUD
-{
+@implementation XLPaymentSuccessHUD {
     CALayer *_animationLayer;
 }
 
 //显示
-+(XLPaymentSuccessHUD*)showIn:(UIView*)view{
++ (XLPaymentSuccessHUD*)showIn:(UIView*)view {
     [self hideIn:view];
     XLPaymentSuccessHUD *hud = [[XLPaymentSuccessHUD alloc] initWithFrame:view.bounds];
     [hud start];
     [view addSubview:hud];
     return hud;
 }
+
 //隐藏
-+(XLPaymentSuccessHUD *)hideIn:(UIView *)view{
++ (XLPaymentSuccessHUD *)hideIn:(UIView *)view {
     XLPaymentSuccessHUD *hud = nil;
     for (XLPaymentSuccessHUD *subView in view.subviews) {
         if ([subView isKindOfClass:[XLPaymentSuccessHUD class]]) {
@@ -41,7 +40,7 @@ static CGFloat checkDuration = 0.2f;
     return hud;
 }
 
--(void)start{
+- (void)start {
     [self circleAnimation];
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 0.8 * circleDuriation * NSEC_PER_SEC);
     dispatch_after(time, dispatch_get_main_queue(), ^(void){
@@ -49,20 +48,20 @@ static CGFloat checkDuration = 0.2f;
     });
 }
 
--(void)hide{
+- (void)hide {
     for (CALayer *layer in _animationLayer.sublayers) {
         [layer removeAllAnimations];
     }
 }
 
--(instancetype)initWithFrame:(CGRect)frame{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self buildUI];
     }
     return self;
 }
 
--(void)buildUI{
+- (void)buildUI {
     _animationLayer = [CALayer layer];
     _animationLayer.bounds = CGRectMake(0, 0, 60, 60);
     _animationLayer.position = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
@@ -70,7 +69,7 @@ static CGFloat checkDuration = 0.2f;
 }
 
 //画圆
--(void)circleAnimation{
+- (void)circleAnimation {
     
     CAShapeLayer *circleLayer = [CAShapeLayer layer];
     circleLayer.frame = _animationLayer.bounds;
@@ -86,17 +85,17 @@ static CGFloat checkDuration = 0.2f;
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:circleLayer.position radius:radius startAngle:-M_PI/2 endAngle:M_PI*3/2 clockwise:true];
     circleLayer.path = path.CGPath;
     
-    CABasicAnimation *checkAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    checkAnimation.duration = circleDuriation;
-    checkAnimation.fromValue = @(0.0f);
-    checkAnimation.toValue = @(1.0f);
-    checkAnimation.delegate = self;
-    [checkAnimation setValue:@"checkAnimation" forKey:@"animationName"];
-    [circleLayer addAnimation:checkAnimation forKey:nil];
+    CABasicAnimation *circleAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    circleAnimation.duration = circleDuriation;
+    circleAnimation.fromValue = @(0.0f);
+    circleAnimation.toValue = @(1.0f);
+    circleAnimation.delegate = self;
+    [circleAnimation setValue:@"circleAnimation" forKey:@"animationName"];
+    [circleLayer addAnimation:circleAnimation forKey:nil];
 }
 
 //对号
--(void)checkAnimation{
+- (void)checkAnimation {
     
     CGFloat a = _animationLayer.bounds.size.width;
     
