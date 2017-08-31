@@ -18,8 +18,8 @@ iOS 支付宝支付动画
 [XLPaymentSuccessHUD hideIn:self.view];
 ```
 
-### [支付中动画原理](http://blog.csdn.net/u013282507/article/details/70208141)
+### 支付中动画原理[我的博文](http://blog.csdn.net/u013282507/article/details/70208141)
 
-### [支付完成动画原理](http://blog.csdn.net/u013282507/article/details/70211889)
+### 支付完成动画原理[我的博文](http://blog.csdn.net/u013282507/article/details/70211889)
 
 ### 个人开发过的UI工具集合 [XLUIKit](https://github.com/mengxianliang/XLUIKit)
